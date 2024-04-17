@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --whiteBg: hsl(210, 20%, 96%);
+
+    --white: hsl(210, 20%, 98%);
+    --brown: hsla(29, 50%, 45%, 0.7);
+    --yellow: hsla(54, 53%, 51%, 0.7);
+    --blue: hsl(219, 50%, 45%);
+    --green: hsl(191, 53%, 51%);
+
+    --textBrown: hsl(39, 50%, 33%);
+  }
+
+  .iconify-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+  }
+}
