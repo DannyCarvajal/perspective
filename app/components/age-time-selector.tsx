@@ -1,3 +1,4 @@
+import { Relief } from "@/icons/relief";
 import { differenceInMilliseconds } from "date-fns";
 
 type AgeTimeSelectorProps = {
@@ -22,8 +23,16 @@ const getAgeInYears = (birthDate: Date) => {
 
 export const AgeTimeSelector = ({ date }: AgeTimeSelectorProps) => {
   return (
-    <div className="flex flex-1 flex-col rounded-xl">
-      <header>you are</header>
+    <div className="relative flex flex-1 flex-col gap-8 overflow-hidden rounded-xl bg-white bg-[url('/cubes-background.png')] px-16 py-12 shadow-xl">
+      <p className="text-body font-light">You are</p>
+      <div className="flex justify-between">
+        <p className="text-heading font-extrabold">
+          {getAgeInYears(date).toFixed(1)}
+        </p>
+        {/* TODO: Dropdown select old type */}
+        <button className="mr-8">Years old</button>
+        <Relief className="bg-gray absolute -right-5 -top-5 size-32 -rotate-[15deg]" />
+      </div>
     </div>
   );
 };

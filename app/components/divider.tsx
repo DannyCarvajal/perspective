@@ -5,5 +5,9 @@ type DividerProps = {
 };
 
 export const Divider = ({ className }: DividerProps) => {
-  return <div className={cn("bg-black h-px w-full opacity-20", className)} />;
+  return (
+    <div
+      className={cn("relative h-[0.5px] w-full bg-black opacity-20", className)}
+    />
+  );
 };

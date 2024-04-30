@@ -26,9 +26,16 @@ const config: Config = {
       yellow: "var(--yellow)",
       blue: "var(--blue)",
       green: "var(--green)",
+      gray: "var(--gray)",
     },
     textColor: {
       brown: "var(--textBrown)",
+    },
+    fontSize: {
+      heading: ["var(--font-size-heading)", { lineHeight: "1" }],
+      subheading: ["var(--font-size-subheading)", { lineHeight: "1" }],
+      body: ["var(--font-size-body)", { lineHeight: "1.25" }],
+      small: ["var(--font-size-small)", { lineHeight: "1" }],
     },
   },
   plugins: [],

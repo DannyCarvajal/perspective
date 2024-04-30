@@ -4,20 +4,47 @@
 
 @layer base {
   :root {
-    --whiteBg: hsl(210, 20%, 96%);
+    /* Colors */
+    --whiteBg: #f4f5f7;
 
     --white: hsl(210, 20%, 98%);
+    --gray: hsla(0, 0, 0, 50%);
     --brown: hsla(29, 50%, 45%, 0.7);
     --yellow: hsla(54, 53%, 51%, 0.7);
     --blue: hsl(219, 50%, 45%);
     --green: hsl(191, 53%, 51%);
 
-    --textBrown: hsl(39, 50%, 33%);
+    --textBrown: #835f1d;
+
+    /* Text sizes */
+    --font-size-heading: 84px;
+    --font-size-subheading: 42px;
+    --font-size-body: 24px;
+    --font-size-small: 16px;
   }
 
-  .iconify-icon {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (width <= 768px) {
+  :root {
+    /* Text sizes */
+    --font-size-heading: 56px;
+    --font-size-subheading: 28px;
+    --font-size-body: 20px;
+    --font-size-small: 14px;
+  }
+}
+
+@media (width <= 600px) {
+  :root {
+    /* Text sizes */
+    --font-size-heading: 48px;
+    --font-size-subheading: 24px;
+    --font-size-body: 18px;
+    --font-size-small: 12px;
   }
 }
